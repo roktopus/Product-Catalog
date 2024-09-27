@@ -104,7 +104,6 @@ public class ProductController {
 
         return productDto;
     }
-
     @ExceptionHandler({RuntimeException.class})
     public ResponseEntity<String> handleExceptions(Exception exception) {
         return new ResponseEntity<>("Load something", HttpStatus.BAD_REQUEST);
